@@ -7,17 +7,33 @@
         <div class="row">
             <div class="col-md-10 col-12 mx-auto">
                 <div class="row">
-                    <div class="col-12 main_header_left">
+                    <div class="col-md-8 col-12 main_header_left">
                       <div class="container">
                         <form action="/join" method="post" id="contact">
-                           <input type="text" name="username" placeholder="Your Name" id="name">
-                           <input type="text" name="age" id="age" placeholder="Your Age">
-                            <input type="text" name="phone" id="phone" placeholder="Mobile No.">
-                           <textarea name="address" id="address" cols="10" rows="5" placeholder="Enter your Address"></textarea>
-                           <textarea name="more" id="more" cols="10" rows="5" placeholder="Tell us about your Interest"></textarea>
+                           <input type="text" name="username" placeholder="Your Name" id="name" required> 
+                           <input type="text" name="age" id="age" placeholder="Your Age" required> 
+                        <input type="text" name="phone" id="phone"  minlength="10"  maxlength="10" placeholder="Mobile No." required>
+                           <textarea name="address" id="address" cols="10" rows="3" placeholder="Enter your Address" required></textarea>
+                           <label for="danceform">Choose Dance form:</label>
+                           <select name="danceform" id="danceform" placeholder="Dance Form">
+                                <option value="Bollywood">Bollywood</option>
+                                <option value="Contempory">Contempory</option>
+                                <option value="Lyrical Hip-Hop">Lyrical Hip-Hop</option>
+                                <option value="Bharatnatyam">Bharatnatyam</option>
+                                <option value="Tap Dance">Tap Dance</option>
+                                <option value="Ballet">Ballet</option>
+                                <option value="Folk Dance">Folk Dance</option>
+                                <option value="Street Dance">Street Dance</option>
+                                <option value="Breakdancing">Breakdancing</option>
+                            </select>
                            <button class="btn joinbtn">Submit</button>
                         </form>
                       </div>
+                    </div>
+                    <div class="col-md-4 col-12 main_header_right join">
+                        <h2><i>Class Timings</i></h2>
+                        <p> ⏺️ Children(below 13) : 4pm to 6pm<br>⏺️ Teenager(13-18) : 6pm to 8pm<br>⏺️ Adults(Above 18) : 5pm to 8pm</p>    
+                        <br> 
                     </div>
                 </div>
             </div>
